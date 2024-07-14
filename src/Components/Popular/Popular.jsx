@@ -4,17 +4,24 @@ import data_product from "../Assets/data";
 import Item from "../Item/Item";
 
 //Asset/data.js
-const Popular = (item) => {
+const Popular = () => {
   return (
     <div className="popular">
       <h1>POPULAR IN WOMEN</h1>
       <hr />
       <div className="popular-item">
-        {data_product.map((item) => {
-          return <Item />;
+        {data_product.map((item, i) => {
+          return (
+            <Item
+              key={i}
+              id={item.id}
+              name={item.name}
+              image={item.image}
+              new_price={item.new_price}
+              old_price={item.old_price}
+            />
+          );
         })}
-        key={item} id={item.id} name={item.name} image={item.image} new_price=
-        {item.new_price} old_price={item.old_price}
       </div>
     </div>
   );
