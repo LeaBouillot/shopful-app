@@ -16,16 +16,16 @@ const Navbar = () => {
 
       <ul className="nav-menu">
         <li>
-          <Link to="/">Shop</Link>{" "}
+          <Link style={{textDecoration: 'none'}} to="/">Shop</Link>
         </li>
         <li>
-          <Link to="/womens">Women</Link>{" "}
+          <Link style={{textDecoration: 'none'}} to="/womens">Women</Link>
         </li>
         <li>
-          <Link to="/mens">Men</Link>{" "}
+          <Link style={{textDecoration: 'none'}} to="/mens">Men</Link>
         </li>
         <li>
-          <Link to="/kids">Kids</Link>{" "}
+          <Link style={{textDecoration: 'none'}} to="/kids">Kids</Link>
         </li>
       </ul>
       <div className="nav-login-cart">
