@@ -8,6 +8,7 @@ import LoginSignup from "./Pages/LoginSignup";
 import Cart from "./Pages/Cart";
 import Hero from "./Components/Hero/Hero";
 import Popular from "./Components/Popular/Popular";
+import Offers from "./Components/Offers/Offers";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Navbar />
         <Hero />
         <Popular />
+        <Offers />
         <Routes>
           <Route path="/shop" element={<Shop />} />
           <Route path="/womens" element={<ShopCategory category="women" />} />
